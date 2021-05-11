@@ -322,9 +322,14 @@ def search_placing(test_data: list,
         new_placement = get_stack_placement_state(mino_map, parts[i])
 
         # drop bad value
+
         i2 = i - 1
-        while parts[i2] == parts[i]:
-            drop_values = list_mino[i2][0][list_mino[i2][-1]:]
+        while list_mino and i2 > -1 and parts[i2] == parts[i]:
+            if list_mino[i2][1] + 1 != len(list_mino[i2][0]):
+                drop_values = list_mino[i2][0][list_mino[i2][-1]:]
+            else:
+                i2 -= 1
+                continue
             for bad_value in drop_values:
                 if bad_value in new_placement:
                     del new_placement[new_placement.index(bad_value)]
