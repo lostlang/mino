@@ -1,89 +1,93 @@
-Start Test 
-Test Data: 
-	Size rectangle (3, 5) 
+
+Start Test
+Test Data:
+	Size rectangle (3, 5)
 	R(Rectangle)-mino : [((2, 2), 1)]
 	L-mino : [((3, 2), 1), ((2, 2), 2)]
 Answer : True; Right answer : True.
-Iterations : 4 
-Path : 
-	 L-mino (3, 2) rotate 180 grad. move to (1, 4) 
-	 R-mino (2, 2) rotate 90 grad. move to (2, 1) 
-	 L-mino (2, 2) rotate 180 grad. flip horizontal, move to (2, 3) 
+Iterations : 4
+Path :
+	 L-mino (3, 2) rotate 180 grad. move to (1, 4)
+	 R-mino (2, 2) rotate 90 grad. move to (2, 1)
+	 L-mino (2, 2) rotate 180 grad. flip horizontal, move to (2, 3)
 	 L-mino (2, 2) rotate 90 grad. flip horizontal, move to (1, 2)
 End Test
 
-Start Test 
-Test Data: 
-	Size rectangle (3, 5) 
+Start Test
+Test Data:
+	Size rectangle (3, 5)
 	R(Rectangle)-mino : [((2, 2), 1), ((1, 1), 1)]
 	L-mino : [((3, 2), 1), ((2, 2), 2)]
 Answer : True; Right answer : True.
-Iterations : 5 
-Path : 
-	 L-mino (3, 2) rotate 180 grad. move to (1, 4) 
-	 R-mino (2, 2) rotate 90 grad. move to (2, 1) 
-	 L-mino (2, 2) rotate 180 grad. flip horizontal, move to (2, 3) 
-	 L-mino (2, 2) rotate 90 grad. flip horizontal, move to (1, 2) 
+Iterations : 5
+Path :
+	 L-mino (3, 2) rotate 180 grad. move to (1, 4)
+	 R-mino (2, 2) rotate 90 grad. move to (2, 1)
+	 L-mino (2, 2) rotate 180 grad. flip horizontal, move to (2, 3)
+	 L-mino (2, 2) rotate 90 grad. flip horizontal, move to (1, 2)
 	 R-mino (1, 1) rotate 90 grad. move to (1, 1)
 End Test
 
-Start Test 
-Test Data: 
-	Size rectangle (3, 5) 
+Start Test
+Test Data:
+	Size rectangle (3, 5)
 	R(Rectangle)-mino : [((2, 2), 1), ((1, 1), 2)]
 	L-mino : [((3, 2), 1), ((2, 2), 2)]
 Answer : False; Right answer : False.
-Iterations : 0 End Test 
-Start Test 
-Test Data: 
-	Size rectangle (4, 5) 
+Iterations : 0
+End Test
+
+Start Test
+Test Data:
+	Size rectangle (4, 5)
 	R(Rectangle)-mino : [((2, 2), 1), ((2, 1), 2)]
 	L-mino : [((4, 2), 1), ((3, 2), 1), ((2, 2), 1)]
 Answer : True; Right answer : True.
-Iterations : 9 
-Path : 
-	 L-mino (4, 2) rotate 180 grad. move to (1, 4) 
-	 L-mino (3, 2) rotate 270 grad. move to (1, 1) 
-	 R-mino (2, 2) rotate 90 grad. move to (3, 1) 
-	 L-mino (2, 2) rotate 270 grad. flip horizontal, move to (3, 3) 
-	 R-mino (2, 1) move to (2, 4) 
+Iterations : 9
+Path :
+	 L-mino (4, 2) rotate 180 grad. move to (1, 4)
+	 L-mino (3, 2) rotate 270 grad. move to (1, 1)
+	 R-mino (2, 2) rotate 90 grad. move to (3, 1)
+	 L-mino (2, 2) rotate 270 grad. flip horizontal, move to (3, 3)
+	 R-mino (2, 1) move to (2, 4)
 	 R-mino (2, 1) rotate 90 grad. move to (2, 2)
 End Test
 
 Start Test
-Test Data: 
-	Size rectangle (4, 5) 
+Test Data:
+	Size rectangle (4, 5)
 	R(Rectangle)-mino : [((2, 2), 1)]
 	L-mino : [((5, 3), 2)]
 Answer : True; Right answer : True.
-Iterations : 3 
-Path : 
-	 L-mino (5, 3) rotate 90 grad. flip horizontal, move to (1, 1) 
-	 L-mino (5, 3) rotate 270 grad. flip horizontal, move to (2, 1) 
+Iterations : 3
+Path :
+	 L-mino (5, 3) rotate 90 grad. flip horizontal, move to (1, 1)
+	 L-mino (5, 3) rotate 270 grad. flip horizontal, move to (2, 1)
 	 R-mino (2, 2) rotate 90 grad. move to (2, 3)
 End Test
 
-Start Test 
-Test Data: 
-	Size rectangle (6, 6) 
+Start Test
+Test Data:
+	Size rectangle (6, 6)
 	R(Rectangle)-mino : []
 	L-mino : [((6, 6), 1), ((4, 2), 5)]
-Answer : False; Right answer : True.
-Iterations : 4591
+Answer : False; Right answer : False.
+Iterations : 769
 End Test
 
-Start Test 
-Test Data: 
-	Size rectangle (6, 6) 
+Start Test
+Test Data:
+	Size rectangle (6, 6)
 	R(Rectangle)-mino : []
 	L-mino : [((6, 6), 1), ((4, 2), 4), ((2, 2), 1)]
 Answer : True; Right answer : True.
-Iterations : 6 
-Path : 
-	 L-mino (6, 6) rotate 90 grad. flip horizontal, move to (1, 1) 
-	 L-mino (4, 2) rotate 270 grad. flip horizontal, move to (5, 1) 
-	 L-mino (4, 2) rotate 90 grad. flip horizontal, move to (5, 2) 
-	 L-mino (4, 2) rotate 270 grad. flip horizontal, move to (3, 1) 
-	 L-mino (4, 2) rotate 270 grad. move to (2, 2) 
+Iterations : 6
+Path :
+	 L-mino (6, 6) rotate 90 grad. flip horizontal, move to (1, 1)
+	 L-mino (4, 2) rotate 270 grad. flip horizontal, move to (5, 1)
+	 L-mino (4, 2) rotate 90 grad. flip horizontal, move to (5, 2)
+	 L-mino (4, 2) rotate 270 grad. flip horizontal, move to (3, 1)
+	 L-mino (4, 2) rotate 270 grad. move to (2, 2)
 	 L-mino (2, 2) rotate 90 grad. flip horizontal, move to (3, 4)
 End Test
+
