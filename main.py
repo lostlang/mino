@@ -1,7 +1,6 @@
 from tests import tests
 import numpy
 
-
 def sort_part(rectangles: tuple, l_mino: tuple) -> dict:
     parts = dict()
 
@@ -321,6 +320,16 @@ def search_placing(test_data: list,
 
     while i < len(parts):
         new_placement = get_stack_placement_state(mino_map, parts[i])
+
+        # drop bad value
+        i2 = i - 1
+        while parts[i2] == parts[i]:
+            drop_values = list_mino[i2][0][list_mino[i2][-1]:]
+            for bad_value in drop_values:
+                if bad_value in new_placement:
+                    del new_placement[new_placement.index(bad_value)]
+            i2 -= 1
+
         if new_placement:
             if not list_mino:
                 new_placement.reverse()
