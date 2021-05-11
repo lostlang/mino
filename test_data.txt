@@ -91,3 +91,16 @@ Path :
 	 L-mino (2, 2) rotate 90 grad. flip horizontal, move to (3, 4)
 End Test
 
+Start Test
+Test Data:
+	Size rectangle (6, 6)
+	R(Rectangle)-mino : [((3, 3), 4)]
+	L-mino : []
+Answer : True; Right answer : True.
+Iterations : 4
+Path :
+	 R-mino (3, 3) move to (4, 1)
+	 R-mino (3, 3) rotate 90 grad. move to (4, 4)
+	 R-mino (3, 3) rotate 90 grad. move to (1, 4)
+	 R-mino (3, 3) rotate 90 grad. move to (1, 1)
+End Test
